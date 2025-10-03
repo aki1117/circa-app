@@ -90,7 +90,8 @@
             "@php artisan key:generate --ansi"
         ],
         "post-install-cmd": [
-            "@php artisan migrate --force --seed"
+            "@php artisan migrate --force",
+            "@php artisan session:table"
         ]
     },
     "minimum-stability": "stable",
