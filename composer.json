@@ -90,7 +90,7 @@
             "@php artisan key:generate --ansi"
         ],
         "post-install-cmd": [
-            "@php artisan migrate --force",
+            "@php artisan migrate --force --seed",
             "@php artisan session:table"
         ]
     },
