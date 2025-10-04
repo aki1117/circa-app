@@ -36,12 +36,6 @@ class ProductForm
 
                 // Image Upload
                 Forms\Components\FileUpload::make('image')
-                    ->label('Product Image')
-                    ->image()
-                    ->disk('public')          // use the public disk
-                    ->visibility('public')
-                    ->directory('products')
-                    ->maxSize(1024), // 1MB
             ]);
     }
 }
