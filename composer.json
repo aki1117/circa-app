@@ -82,17 +82,7 @@
             "php-http/discovery": true
         }
     },
-    "scripts": {
-        "post-root-package-install": [
-            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-        ],
-        "post-create-project-cmd": [
-            "@php artisan key:generate --ansi"
-        ],
-        "post-install-cmd": [
-            
-        ]
-    },
+    
     "minimum-stability": "stable",
     "prefer-stable": true
 }
