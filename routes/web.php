@@ -2,9 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+use Livewire\Livewire;
+
+Livewire::routes();
 
 Route::get('/', function () {
     return redirect()->route('filament.admin.auth.login');
